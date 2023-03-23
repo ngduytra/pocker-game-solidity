@@ -1,0 +1,302 @@
+{
+  "contractName": "PokerStruct",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.18+commit.87f61d96\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/poker/struct.sol\":\"PokerStruct\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/poker/struct.sol\":{\"keccak256\":\"0xe2f38e99652a662ffd1ddfc355fcd09e5b20e11cdefd8ac87313ec052f557a03\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b37fe43c1de3d3a923fb551e9a20ba433e4fac86c7e27c4aa15ed03dff006672\",\"dweb:/ipfs/QmTSRKhX48VrKBo4yF7aUrxeBdf1hobhJtAKzCCMWYPpTz\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212201eeacfdfbcbd7a8fa1127cad43c0e1a1272171346374797740eec5451893a08964736f6c63430008120033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212201eeacfdfbcbd7a8fa1127cad43c0e1a1272171346374797740eec5451893a08964736f6c63430008120033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "57:289:4:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "57:289:4:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.9;\n\ncontract PokerStruct {\n    enum BattleState {\n        Wait,\n        Playing,\n        Finish,\n        Claimed\n    }\n\n    struct Battle {\n        address owner;\n        address player;\n        address winner;\n        address bet_token;\n        uint amount;\n        BattleState state;\n    }\n}\n",
+  "sourcePath": "/Users/tranguyenduy/Documents/GitHub/solidity/fist-truffle/contracts/poker/struct.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/poker/struct.sol",
+    "exportedSymbols": {
+      "PokerStruct": [
+        731
+      ]
+    },
+    "id": 732,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 711,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "PokerStruct",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 731,
+        "linearizedBaseContracts": [
+          731
+        ],
+        "name": "PokerStruct",
+        "nameLocation": "66:11:4",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "PokerStruct.BattleState",
+            "id": 716,
+            "members": [
+              {
+                "id": 712,
+                "name": "Wait",
+                "nameLocation": "111:4:4",
+                "nodeType": "EnumValue",
+                "src": "111:4:4"
+              },
+              {
+                "id": 713,
+                "name": "Playing",
+                "nameLocation": "125:7:4",
+                "nodeType": "EnumValue",
+                "src": "125:7:4"
+              },
+              {
+                "id": 714,
+                "name": "Finish",
+                "nameLocation": "142:6:4",
+                "nodeType": "EnumValue",
+                "src": "142:6:4"
+              },
+              {
+                "id": 715,
+                "name": "Claimed",
+                "nameLocation": "158:7:4",
+                "nodeType": "EnumValue",
+                "src": "158:7:4"
+              }
+            ],
+            "name": "BattleState",
+            "nameLocation": "89:11:4",
+            "nodeType": "EnumDefinition",
+            "src": "84:87:4"
+          },
+          {
+            "canonicalName": "PokerStruct.Battle",
+            "id": 730,
+            "members": [
+              {
+                "constant": false,
+                "id": 718,
+                "mutability": "mutable",
+                "name": "owner",
+                "nameLocation": "209:5:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 730,
+                "src": "201:13:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 717,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "201:7:4",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 720,
+                "mutability": "mutable",
+                "name": "player",
+                "nameLocation": "232:6:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 730,
+                "src": "224:14:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 719,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "224:7:4",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 722,
+                "mutability": "mutable",
+                "name": "winner",
+                "nameLocation": "256:6:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 730,
+                "src": "248:14:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 721,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "248:7:4",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 724,
+                "mutability": "mutable",
+                "name": "bet_token",
+                "nameLocation": "280:9:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 730,
+                "src": "272:17:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 723,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "272:7:4",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 726,
+                "mutability": "mutable",
+                "name": "amount",
+                "nameLocation": "304:6:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 730,
+                "src": "299:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 725,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "299:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 729,
+                "mutability": "mutable",
+                "name": "state",
+                "nameLocation": "332:5:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 730,
+                "src": "320:17:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_BattleState_$716",
+                  "typeString": "enum PokerStruct.BattleState"
+                },
+                "typeName": {
+                  "id": 728,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 727,
+                    "name": "BattleState",
+                    "nameLocations": [
+                      "320:11:4"
+                    ],
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 716,
+                    "src": "320:11:4"
+                  },
+                  "referencedDeclaration": 716,
+                  "src": "320:11:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_BattleState_$716",
+                    "typeString": "enum PokerStruct.BattleState"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Battle",
+            "nameLocation": "184:6:4",
+            "nodeType": "StructDefinition",
+            "scope": 731,
+            "src": "177:167:4",
+            "visibility": "public"
+          }
+        ],
+        "scope": 732,
+        "src": "57:289:4",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:315:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.18+commit.87f61d96.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.12",
+  "updatedAt": "2023-03-13T10:03:28.258Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
